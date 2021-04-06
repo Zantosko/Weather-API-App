@@ -35,7 +35,7 @@ const getWeather = async () => {
               <p class="temp">${Math.round(convertToJSON.main.temp)} &degF</p>
             </div>
             <div class="grid-right">
-              <img src="http://openweathermap.org/img/w/${convertToJSON.weather[0].icon}.png">
+              <img src="https://openweathermap.org/img/w/${convertToJSON.weather[0].icon}.png">
             </div>
           </div>
         `
