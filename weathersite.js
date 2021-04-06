@@ -23,7 +23,7 @@ const getWeather = async () => {
     zipCode.value = "";
   } else {
       try {
-        const data = await fetch(`http://api.openweathermap.org/data/2.5/weather?zip=${zipCode.value},us&units=imperial&appid=${API}`)
+        const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipCode.value},us&units=imperial&appid=${API}`)
       
         const convertToJSON = await data.json()
         
